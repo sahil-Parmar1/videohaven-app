@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461404302319",
+    "project_id": "videohaven-d86ff",
+    "storage_bucket": "videohaven-d86ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461404302319:android:4c6231ceb965b4da9b241a",
+        "android_client_info": {
+          "package_name": "com.example.videohaven"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_sOsUAcyA-SNl7Zvq3qlKj10B7lmMaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
