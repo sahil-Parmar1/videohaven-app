@@ -25,4 +25,4 @@ Videohaven is a modern video streaming app built with Flutter that leverages the
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/videohaven.git
+   git clone https://github.com/sahil-Parmar1/videohaven-app.git
