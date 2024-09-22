@@ -20,6 +20,7 @@ Videohaven is a modern video streaming app built with Flutter that leverages the
 - **YouTube API**: Integrated to fetch video content and metadata.
 - **Hive**: A lightweight and fast key-value database for Flutter.
 - **SharedPreferences**: For storing user preferences and simple data.
+- **Firebase**: For Authentication
 
 ## Installation
 
