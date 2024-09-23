@@ -1,16 +1,29 @@
-# videohaven
+# Videohaven
 
-A new Flutter project.
+Videohaven is a modern video streaming app built with Flutter that leverages the YouTube API. It offers a user-friendly interface with Cupertino design elements and a range of powerful features for discovering and managing videos.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Search Videos**: Easily search for videos using keywords.
+- **Save History**: Keep track of your watched videos with a built-in history feature.
+- **Playlist Search**: Discover playlists related to your search queries.
+- **Saved Playlists**: Save your favorite playlists for quick access.
+- **Local Storage**: Utilize Hive and SharedPreferences for efficient local data storage.
+- **Suggested Videos**: Get video recommendations based on your viewing history.
+- **Search Channels**: Find and explore channels that interest you.
+- **Follow Channels**: Stay updated by following your favorite channels.
+- **Video Playback**: Enjoy videos in full-screen mode with high-definition options and the ability to set your preferred quality.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: A powerful UI toolkit for building natively compiled applications.
+- **YouTube API**: Integrated to fetch video content and metadata.
+- **Hive**: A lightweight and fast key-value database for Flutter.
+- **SharedPreferences**: For storing user preferences and simple data.
+- **Firebase**: For Authentication
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sahil-Parmar1/videohaven-app.git
