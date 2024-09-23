@@ -77,28 +77,35 @@ class _ChannelsListState extends State<ChannelsList> {
      );
   }
   Widget _buildSearchbar(){
-    return TextField(
-      controller: _searchController,
-      decoration: InputDecoration(
-        hintText: 'Search channels....',
-        border:OutlineInputBorder(
-            borderRadius: BorderRadius.circular(50)
-        ),
-        prefixIcon: Icon(CupertinoIcons.search),
-        suffixIcon: GestureDetector(
-            onTap: (){
-              setState(() {
-                _searchController.clear();
-              });
-            },
-            child: Icon(CupertinoIcons.clear,size: 25,)),
-        isDense: true,
-
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: screenWidth * 0.05, // Adjust padding based on screen width
       ),
+      child: TextField(
+        controller: _searchController,
+        decoration: InputDecoration(
+          hintText: 'Search channels....',
+          border:OutlineInputBorder(
+              borderRadius: BorderRadius.circular(50)
+          ),
+          prefixIcon: Icon(CupertinoIcons.search),
+          suffixIcon: GestureDetector(
+              onTap: (){
+                setState(() {
+                  _searchController.clear();
+                });
+              },
+              child: Icon(CupertinoIcons.clear,size: 25,)),
+          isDense: true,
 
-      onSubmitted: (query){
-           setState(() {});
-      },
+        ),
+
+        onSubmitted: (query){
+             setState(() {});
+        },
+      ),
     );
   }
 

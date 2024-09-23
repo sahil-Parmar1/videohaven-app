@@ -105,33 +105,41 @@ class _PlaylistscreenState extends State<Playlistscreen> {
 
   Widget _buildSearchScreen()
   {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Column(
       children: [
-        TextField(
-          controller: _searchController,
-          decoration: InputDecoration(
-            hintText: 'Search....',
-            border:OutlineInputBorder(
-              borderRadius: BorderRadius.circular(50)
-            ),
-            prefixIcon: Icon(CupertinoIcons.search),
-            suffixIcon: GestureDetector(
-                onTap: (){
-                  setState(() {
-                    _issearch=false;
-                    _searchController.clear();
-                  });
-                },
-                child: Icon(CupertinoIcons.clear,size: 25,)),
-            isDense: true,
-
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: screenWidth * 0.05, // Adjust padding based on screen width
           ),
-          onSubmitted: (query){
-            topic=query;
-            setState(() {
-              _issearch=true;
-            });
-          },
+          child: TextField(
+            controller: _searchController,
+            decoration: InputDecoration(
+              hintText: 'Search....',
+              border:OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50)
+              ),
+              prefixIcon: Icon(CupertinoIcons.search),
+              suffixIcon: GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      _issearch=false;
+                      _searchController.clear();
+                    });
+                  },
+                  child: Icon(CupertinoIcons.clear,size: 25,)),
+              isDense: true,
+
+            ),
+            onSubmitted: (query){
+              topic=query;
+              setState(() {
+                _issearch=true;
+              });
+            },
+          ),
         ),
         Expanded(child: PlaylistScreen(topic: topic))
 
